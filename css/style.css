@@ -52,6 +52,10 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  /* Evita que o navegador reajuste a rolagem sozinho quando algo acima
+     muda de tamanho (imagem/fonte carregando), brigando com o reset
+     de scroll ao abrir a página (js/init.js). */
+  overflow-anchor: none;
 }
 
 body {
