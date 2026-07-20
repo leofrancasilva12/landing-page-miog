@@ -10,7 +10,11 @@ document.documentElement.classList.add("js-ativo");
 if ("scrollRestoration" in history) {
   history.scrollRestoration = "manual";
 }
-window.addEventListener("load", function () {
+function irParaTopo() {
   // Só sobe se não houver âncora na URL (ex.: /#plataforma deve continuar valendo).
   if (!window.location.hash) window.scrollTo(0, 0);
-});
+}
+window.addEventListener("load", irParaTopo);
+/* "pageshow" cobre o caso do navegador restaurar a página do cache
+   (voltar/avançar, trocar de app no celular) sem disparar "load" de novo. */
+window.addEventListener("pageshow", irParaTopo);
