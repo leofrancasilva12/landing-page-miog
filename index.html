@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mister Intelligence O&amp;G (MIOG) — Inteligência Técnica para a Indústria de Óleo e Gás</title>
+<meta name="description" content="Plataforma inteligente que integra engenharia, normas técnicas (API, ABNT, ASME, ASTM, ISO, NACE, AWS) e Inteligência Artificial para a indústria de óleo e gás.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/init.js"></script>
+</head>
+<body>
+
+<!-- Barra de progresso de leitura -->
+<div class="progresso" aria-hidden="true"><span id="progresso-barra"></span></div>
+
+<!-- Cabeçalho que aparece ao rolar -->
+<header class="topo-fixo" id="topo-fixo">
+  <div class="wrap topo-inner">
+    <a class="topo-marca" href="#topo">
+      MIOG <span>Mister Intelligence O&amp;G</span>
+    </a>
+    <a class="btn btn-primario btn-pequeno" href="https://mister-intelligence.vercel.app">
+      Acessar a plataforma
+    </a>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="topo">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="gradiente-vivo"></span>
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="grid-lines"></span>
+  </div>
+
+  <div class="wrap hero-inner">
+    <figure class="hero-marca reveal" data-reveal="zoom">
+      <img src="img/marca-miog.png"
+           alt="Mister Intelligence O&amp;G — Inteligência Técnica para a Indústria de Óleo e Gás"
+           width="840" height="1050" fetchpriority="high">
+    </figure>
+
+    <div class="hero-texto">
+      <p class="hero-eyebrow reveal" data-reveal="up">Plataforma de Inteligência Técnica</p>
+      <h1 class="reveal" data-reveal="up" data-delay="1">
+        Conhecimento de engenharia,<br>
+        <span class="destaque" id="frase-rotativa">na hora que você precisa.</span><span
+          class="cursor-titulo" id="cursor-titulo" aria-hidden="true"></span>
+      </h1>
+      <p class="hero-sub reveal" data-reveal="up" data-delay="2">
+        O MIOG une normas técnicas nacionais e internacionais à Inteligência Artificial
+        para apoiar decisões precisas, seguras e eficientes na indústria de óleo e gás.
+      </p>
+      <div class="hero-acoes reveal" data-reveal="up" data-delay="3">
+        <a class="btn btn-primario" href="https://mister-intelligence.vercel.app">Acessar a plataforma</a>
+        <a class="btn btn-fantasma" href="#plataforma">Ver como funciona</a>
+      </div>
+
+      <ul class="hero-pilares reveal" data-reveal="up" data-delay="4">
+        <li><strong data-contador="7">0</strong><span>famílias de normas</span></li>
+        <li><strong>24/7</strong><span>disponível</span></li>
+        <li><strong>0</strong><span>instalação necessária</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <a class="hero-seta" href="#plataforma" aria-label="Rolar para a próxima seção"></a>
+</header>
+
+<main>
+
+  <!-- ===================== APLICATIVO ===================== -->
+  <section id="plataforma" class="secao secao-plataforma">
+    <div class="wrap">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">A plataforma</p>
+        <h2>Pergunte em português. Receba fundamentação técnica.</h2>
+        <p class="secao-sub">
+          Sem manuais empilhados na mesa: você descreve a dúvida e o MIOG responde
+          com base nas normas aplicáveis.
+        </p>
+      </div>
+
+      <!-- Simulação da interface do aplicativo -->
+      <div class="app-janela reveal" data-reveal="up" data-delay="1" id="app-demo">
+        <div class="app-barra">
+          <span class="ponto"></span><span class="ponto"></span><span class="ponto"></span>
+          <div class="app-url">mister-intelligence.vercel.app</div>
+        </div>
+
+        <div class="app-corpo">
+          <aside class="app-lateral" aria-hidden="true">
+            <div class="app-novo"></div>
+            <div class="app-item app-item-ativo"></div>
+            <div class="app-item"></div>
+            <div class="app-item"></div>
+            <div class="app-item curto"></div>
+          </aside>
+
+          <div class="app-chat">
+            <div class="app-msg app-msg-usuario" id="app-msg-usuario">
+              <p id="app-pergunta">Qual a diferença entre conexões EUE e NUE?</p>
+            </div>
+
+            <div class="app-msg app-msg-mister" id="app-msg-mister">
+              <div class="app-avatar" aria-hidden="true"></div>
+              <div class="app-balao">
+                <p class="app-digitando" id="app-resposta"></p>
+                <span class="app-cursor" id="app-cursor" aria-hidden="true"></span>
+              </div>
+            </div>
+
+            <div class="app-composer" aria-hidden="true">
+              <span>Pergunte ao Mister...</span>
+              <div class="app-enviar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-chips" data-stagger="pop" data-passo="0.07">
+        <span class="chip">Diferença entre EUE e NUE</span>
+        <span class="chip">Quando usar API 5CT vs 5L</span>
+        <span class="chip">Compatibilidade de conexões</span>
+        <span class="chip">Estrutura de um QMS conforme API Q1</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== O QUE É ===================== -->
+  <section class="secao">
+    <div class="wrap estreito">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">O que é o MIOG</p>
+        <h2>Um parceiro estratégico da engenharia</h2>
+      </div>
+      <div class="texto-corrido reveal" data-reveal="up" data-delay="1">
+        <p class="destaque-paragrafo">
+          O <strong>Mister Intelligence O&amp;G (MIOG)</strong> é uma plataforma inteligente
+          desenvolvida para transformar conhecimento técnico em soluções práticas para a
+          indústria de óleo e gás.
+        </p>
+        <p>
+          Criado com base na experiência de profissionais do setor e impulsionado por
+          Inteligência Artificial, o MIOG integra engenharia, normas técnicas e inovação em
+          um único ambiente, oferecendo suporte confiável para fabricantes, operadores,
+          inspetores, engenheiros, gestores da qualidade, consultores e estudantes.
+        </p>
+        <p>
+          Mais do que um assistente virtual, o <strong>MIOG</strong> foi concebido para
+          proporcionar respostas fundamentadas, informações confiáveis e apoio técnico para
+          aumentar a segurança, a produtividade, a conformidade normativa e a excelência
+          operacional.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PILARES ===================== -->
+  <section class="secao secao-escura">
+    <div class="wrap">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">Pilares</p>
+        <h2>Cinco frentes, uma plataforma</h2>
+      </div>
+      <ul class="pilares" data-stagger="tilt" data-passo="0.09">
+        <li class="pilar">
+          <span class="pilar-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <h3>Normas Técnicas</h3>
+          <p>Interpretação de requisitos e apoio na aplicação correta das normas vigentes.</p>
+        </li>
+        <li class="pilar">
+          <span class="pilar-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </span>
+          <h3>Engenharia</h3>
+          <p>Cálculos, especificações técnicas, fabricação, inspeção e manutenção.</p>
+        </li>
+        <li class="pilar">
+          <span class="pilar-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg>
+          </span>
+          <h3>Qualidade</h3>
+          <p>Procedimentos, auditorias e gestão da qualidade conforme API Q1 e ISO.</p>
+        </li>
+        <li class="pilar">
+          <span class="pilar-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21v-6"/><path d="M9 21V9"/><path d="M15 21v-9"/><path d="M21 21V4"/><path d="m17 8 4-4"/><path d="M21 8V4h-4"/></svg>
+          </span>
+          <h3>Inteligência Artificial</h3>
+          <p>Respostas fundamentadas em segundos, disponíveis a qualquer hora.</p>
+        </li>
+        <li class="pilar">
+          <span class="pilar-icone" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          <h3>Conhecimento sem Fronteiras</h3>
+          <p>Referências nacionais e internacionais reunidas em um só lugar.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== NORMAS ===================== -->
+  <section class="secao">
+    <div class="wrap">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">Normas técnicas</p>
+        <h2>Referências que a plataforma domina</h2>
+      </div>
+      <div class="normas" data-stagger="pop" data-passo="0.08">
+        <span class="norma">API</span>
+        <span class="norma">ABNT</span>
+        <span class="norma">ASME</span>
+        <span class="norma">ASTM</span>
+        <span class="norma">ISO</span>
+        <span class="norma">NACE</span>
+        <span class="norma">AWS</span>
+      </div>
+      <p class="nota reveal" data-reveal="up" data-delay="2">
+        Além de outras referências aplicáveis à indústria, auxiliando na interpretação de
+        requisitos, elaboração de procedimentos, especificações técnicas, cálculos de
+        engenharia, inspeções, fabricação, manutenção, gestão da qualidade e tomada de decisões.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== PARA QUEM ===================== -->
+  <section class="secao secao-suave">
+    <div class="wrap">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">Para quem é</p>
+        <h2>Feito para quem vive a indústria</h2>
+      </div>
+      <ul class="publico" data-stagger="up" data-passo="0.06">
+        <li>Fabricantes</li>
+        <li>Operadores</li>
+        <li>Inspetores</li>
+        <li>Engenheiros</li>
+        <li>Gestores da qualidade</li>
+        <li>Consultores</li>
+        <li>Estudantes</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== MISSÃO / VISÃO ===================== -->
+  <section class="secao">
+    <div class="wrap">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">Propósito</p>
+        <h2>Missão e Visão</h2>
+      </div>
+      <div class="duo">
+        <article class="cartao reveal" data-reveal="left">
+          <h3>Nossa Missão</h3>
+          <p>
+            Capacitar profissionais e empresas da indústria de óleo e gás por meio de uma
+            plataforma inteligente que integra conhecimento técnico, normas internacionais e
+            Inteligência Artificial para apoiar decisões precisas, seguras e eficientes.
+          </p>
+        </article>
+        <article class="cartao reveal" data-reveal="right">
+          <h3>Nossa Visão</h3>
+          <p>
+            Ser a principal plataforma de Inteligência Artificial especializada em engenharia,
+            normas técnicas e gestão da qualidade para a indústria de óleo e gás, tornando-se
+            uma referência global em conhecimento técnico aplicado.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VALORES ===================== -->
+  <section class="secao secao-suave">
+    <div class="wrap">
+      <div class="secao-topo reveal" data-reveal="up">
+        <p class="rotulo">Nossos Valores</p>
+        <h2>O que nos guia</h2>
+      </div>
+      <ul class="valores" data-stagger="left" data-passo="0.06">
+        <li>Excelência técnica</li>
+        <li>Ética e confiabilidade</li>
+        <li>Inovação contínua</li>
+        <li>Segurança operacional</li>
+        <li>Compromisso com a qualidade</li>
+        <li>Compartilhamento do conhecimento</li>
+        <li>Foco na evolução da indústria</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== ACESSO ===================== -->
+  <section class="secao secao-acesso">
+    <div class="wrap">
+      <div class="acesso reveal" data-reveal="zoom">
+        <div class="acesso-texto">
+          <p class="rotulo">Acesse agora</p>
+          <h2>Comece a usar em segundos</h2>
+          <p>
+            Aponte a câmera do celular para o código ou toque no botão para abrir o MIOG
+            direto no navegador — sem instalar nada.
+          </p>
+          <a class="btn btn-primario" href="https://mister-intelligence.vercel.app">Abrir o MIOG</a>
+        </div>
+
+        <div class="acesso-qr">
+          <div class="qr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" shape-rendering="crispEdges" role="img" aria-label="QR Code para acessar o MIOG"><path fill="#ffffff" d="M0 0h31v31H0z"/><path stroke="#000000" d="M1 1.5h7m7 0h1m1 0h1m1 0h3m1 0h7M1 2.5h1m5 0h1m2 0h2m1 0h1m2 0h3m2 0h1m1 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m1 0h1m1 0h3m2 0h1m6 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h3m1 0h4m1 0h1m1 0h1m2 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m1 0h1m1 0h2m2 0h1m1 0h1m1 0h3m1 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m1 0h1m2 0h2m2 0h1m6 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 8.5h1m1 0h1m1 0h1m3 0h1m3 0h1M1 9.5h1m1 0h5m4 0h1m5 0h1m1 0h1m2 0h5M2 10.5h1m1 0h1m3 0h2m1 0h1m2 0h1m3 0h8m3 0h1M1 11.5h1m1 0h2m2 0h2m1 0h2m1 0h4m1 0h1m6 0h1M1 12.5h2m3 0h1m3 0h2m1 0h2m1 0h2m1 0h1m1 0h1m2 0h3m1 0h1M2 13.5h3m2 0h1m2 0h3m2 0h1m2 0h1m1 0h1m3 0h1m1 0h2M2 14.5h1m2 0h1m2 0h1m1 0h1m1 0h2m3 0h1m1 0h3m1 0h3m3 0h1M2 15.5h2m1 0h3m4 0h1m3 0h4m1 0h2m1 0h1m1 0h2M4 16.5h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h3m3 0h3m1 0h1m2 0h1M4 17.5h4m1 0h2m2 0h1m2 0h1m1 0h1m3 0h1m1 0h1m1 0h2M1 18.5h2m1 0h1m1 0h1m1 0h3m3 0h2m1 0h1m1 0h7m1 0h1m1 0h1M1 19.5h1m5 0h2m1 0h2m2 0h4m5 0h3m1 0h1M1 20.5h1m1 0h1m1 0h1m3 0h1m1 0h1m2 0h1m6 0h1m6 0h1M1 21.5h1m1 0h1m1 0h1m1 0h4m1 0h2m1 0h2m1 0h2m1 0h5m1 0h3M9 22.5h1m1 0h2m4 0h5m3 0h5M1 23.5h7m2 0h1m2 0h1m2 0h1m1 0h1m1 0h2m1 0h1m1 0h3M1 24.5h1m5 0h1m1 0h4m2 0h1m3 0h3m3 0h1m2 0h2M1 25.5h1m1 0h3m1 0h1m1 0h3m4 0h3m2 0h5m1 0h1M1 26.5h1m1 0h3m1 0h1m1 0h2m1 0h1m2 0h1m1 0h1m3 0h1m4 0h4M1 27.5h1m1 0h3m1 0h1m1 0h2m2 0h2m1 0h3m1 0h9M1 28.5h1m5 0h1m3 0h2m2 0h3m1 0h1m1 0h6m1 0h1M1 29.5h7m1 0h8m1 0h1m1 0h1m3 0h1m2 0h1"/></svg>
+          </div>
+          <p class="qr-legenda">Aponte a câmera<br>do celular</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="rodape">
+  <div class="wrap">
+    <p class="rodape-marca">Mister Intelligence O&amp;G <span>(MIOG)</span></p>
+    <p class="rodape-slogan">“Inteligência Técnica para a Indústria de Óleo e Gás.”</p>
+    <p class="rodape-nota">
+      As respostas geradas pela plataforma têm caráter de apoio técnico e não substituem
+      a consulta às normas vigentes nem o julgamento de profissional habilitado.
+    </p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
